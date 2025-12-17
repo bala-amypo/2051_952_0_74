@@ -3,5 +3,4 @@ import com.example.demo.entity.Student;
 import com.example.demo.service.StudentService;
 public interface StudentService{
      Student poststudent(Student st);
-     Student getAllStudents();
 }
