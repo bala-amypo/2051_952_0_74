@@ -11,7 +11,7 @@ public class Student{
     private String name;
     private String dept;
     private float cgpa;
-    @Past()
+    @Past(message="Correct Date")
     private LocalDate dob;
     public Long getId() {
         return id;
