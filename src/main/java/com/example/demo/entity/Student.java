@@ -5,7 +5,7 @@ import jakarta.validation.constraints.*;
 @Entity
 public class Student{
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)3
      private Long id;
      @NotBlank(message="Not null")
     private String name;
