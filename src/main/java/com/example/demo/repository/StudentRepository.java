@@ -7,7 +7,7 @@ public interface StudentRepository extends JpaRepository<Student,Long>{
        @Query("From Student s where s.name=:n")
        List<Student> getByAll(@Param ("n") String name);
 
-       @Query("From Student s where s.age>:a")
-       List<Student> getByAge(@Param ("a") int age);
+       @Query("From Student s where s.cgpa>:a")
+       List<Student> getBycpge(@Param ("a") int cgpa);
 
 }

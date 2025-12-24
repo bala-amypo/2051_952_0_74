@@ -28,4 +28,9 @@ public class StudentController{
     public String delete(@PathVariable Long id){
         return stdser.deleteData(id);
     }
+    @GetMapping("{name}")
+    public List<Student> getByAll(@PathVariable String name){
+        return stdser.getby(name);
+    }
+    @GetMapping("{}")
 }
