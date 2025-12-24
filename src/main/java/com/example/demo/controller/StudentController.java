@@ -32,5 +32,8 @@ public class StudentController{
     public List<Student> getByAll(@PathVariable String name){
         return stdser.getby(name);
     }
-    @GetMapping("{}")
+    @GetMapping("{cgpa}")
+    public List<Student> getBycgpa(@PathVariable float cgpa){
+        return stdser.getbyc(cgpa);
+    }
 }

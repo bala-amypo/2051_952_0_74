@@ -46,4 +46,9 @@ public class StudentServiceImpl implements StudentService{
         return "Student with Id "+id+" not found";
       }
     }
+
+    @Override
+    public List<Student> getByAll(String name){
+      
+    }
 }

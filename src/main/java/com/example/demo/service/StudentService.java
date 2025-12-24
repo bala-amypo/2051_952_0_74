@@ -9,5 +9,5 @@ public interface StudentService{
      String updateData(Long id,Student st);
      String deleteData(Long id);
      List<Student> getby(String name);
-     
+     List<Student> getbyc(float cgpa);
 }
